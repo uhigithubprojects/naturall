@@ -8,15 +8,72 @@
     <title>Contact Us</title>
   </head>
   <body>
-    <form action="">
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" /><br />
-      <label for="email">Email</label><br />
-      <input type="email" id="email" name="email" /><br />
-      <br />
-      <input type="submit" id="submit" value="Submit" /><br />
-    </form>
+    <header>
+        <img src="#" alt="#" />
+        <!--Logo-->
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>CONTACT US</h1>
+      <br><br>
+      <h3>Have a question? Ask us anything!</h3>
+      <br>
+      <h4>We're here for you Monday - Friday 9am - 8pm.</h4>
+      <br>
+      <h4>Want to talk? Call us: (00) 000 000 000</h4>
+      <br>
+      <h4>Want to drop us an email? Here's the address: office@naturall.co.uk</h4>
+      <br>
+      <h4>Have a quick question? Use contact form below and we'll be back to you as soon as possible!</h4>
+      <br>
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="problem">Choose one of the options:</label>
+          </div>
+          <div class="col-75">
+            <select id="problem" name="problem">
+              <option value="complaint">I have a problem with my purchase</option>
+              <option value="shopissue">I have a problem with my account</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Your message</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Type your message here.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+      </div>
   </body>
 </html>
