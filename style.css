@@ -4,7 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252a;
+}
+
+body {
+  background-color: #d3d3d3;
 }
 
 li,
@@ -19,13 +22,17 @@ a {
 header {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding: 30px 10%;
+  padding: 10px 10%;
+  background-color: #68689b;
+}
+
+header img {
 }
 
 .logo {
-  cursor: painter;
-  margin-right: auto;
+  height: 40px;
+  width: 40px;
+  border-radius: 15px;
 }
 
 .nav_links {
