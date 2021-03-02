@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <img src="#" alt="#" />
+      <img src="Images/logo.png" alt="logo" id="logo" />
       <!--Logo-->
       <nav>
         <ul class="nav_links">
@@ -35,67 +35,35 @@
       soon as possible!
     </h4>
     <br />
-    <div class="container">
-      <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your name.."
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Last Name</label>
-          </div>
-          <div class="col-75">
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="problem">Choose one of the options:</label>
-          </div>
-          <div class="col-75">
-            <select id="problem" name="problem">
-              <option value="complaint">
-                I have a problem with my purchase
-              </option>
-              <option value="shopissue">
-                I have a problem with my account
-              </option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Your message</label>
-          </div>
-          <div class="col-75">
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Type your message here.."
-              style="height: 200px"
-            ></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
-    </div>
+    <form action="/action_page.php" class="contactForm">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Your name.."
+      />
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="Your last name.."
+      />
+      <label for="problem">Choose one of the options:</label>
+      <select id="problem" name="problem">
+        <option value="complaint">I have a problem with my purchase</option>
+        <option value="shopissue">I have a problem with my account</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="subject">Your message</label>
+      <textarea
+        id="subject"
+        name="subject"
+        placeholder="Type your message here.."
+        style="height: 200px"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
