@@ -1,0 +1,51 @@
+.contactForm {
+  display: flex;
+  background-color: beige;
+  border-radius: 3px;
+  padding: 1.8em;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  order: 3;
+}
+.message > textarea {
+  flex: 1;
+  min-width: 18em;
+}
+.contact {
+  flex: 1;
+  order: 1;
+  margin-right: 2em;
+}
+.contact input {
+  width: 100%;
+}
+.contact input,
+.submit-button button {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.submit-button button {
+  background: grey;
+  color: white;
+  border: 0;
+}
+
+.submit-button {
+  order: 2;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .contactForm {
+    flex-direction: column;
+  }
+  .message {
+    margin-right: 2em;
+    order: 2;
+  }
+  .submit-button {
+    order: 3;
+  }
+}

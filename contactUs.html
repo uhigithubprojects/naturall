@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formStyle.css" />
     <title>Contact Us</title>
   </head>
   <body>
@@ -22,48 +23,29 @@
     </header>
     <h1>CONTACT US</h1>
     <br /><br />
-    <h3>Have a question? Ask us anything!</h3>
-    <br />
-    <h4>We're here for you Monday - Friday 9am - 8pm.</h4>
-    <br />
-    <h4>Want to talk? Call us: (00) 000 000 000</h4>
-    <br />
-    <h4>Want to drop us an email? Here's the address: office@naturall.co.uk</h4>
-    <br />
     <h4>
       Have a quick question? Use contact form below and we'll be back to you as
       soon as possible!
     </h4>
     <br />
-    <form action="/action_page.php" class="contactForm">
-      <label for="fname">First Name</label>
-      <input
-        type="text"
-        id="fname"
-        name="firstname"
-        placeholder="Your name.."
-      />
-      <label for="lname">Last Name</label>
-      <input
-        type="text"
-        id="lname"
-        name="lastname"
-        placeholder="Your last name.."
-      />
-      <label for="problem">Choose one of the options:</label>
-      <select id="problem" name="problem">
-        <option value="complaint">I have a problem with my purchase</option>
-        <option value="shopissue">I have a problem with my account</option>
-        <option value="other">Other</option>
-      </select>
-      <label for="subject">Your message</label>
-      <textarea
-        id="subject"
-        name="subject"
-        placeholder="Type your message here.."
-        style="height: 200px"
-      ></textarea>
-      <input type="submit" value="Submit" />
+    <form action="#" class="contactForm">
+      <div class="message">
+        <label for="msg">Message</label>
+        <textarea id="msg"></textarea>
+      </div>
+      <div class="contact">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+
+        <label for="townborn">Town you were born in</label>
+        <input type="text" id="townborn" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" />
+      </div>
+      <div class="submit-button">
+        <button type="submit">Submit</button>
+      </div>
     </form>
   </body>
 </html>
