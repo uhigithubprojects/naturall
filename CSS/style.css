@@ -7,20 +7,23 @@
 }
 
 body {
-  background-color: #c9c9c9;
+  background-image: linear-gradient(to top, #ddf2eb, #d3cdd7);
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 header {
   display: flex;
   padding: 10px 5%;
-  background-color: #424242;
+  background-color: #ddf2eb;
   align-items: center;
   align-self: stretch;
 }
 
 #logo {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
 }
 
 .nav_links {
@@ -38,13 +41,13 @@ header {
   transition: all 0.3s ease 0;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
-  font-size: 12px;
-  color: #feffea;
+  font-size: 15px;
+  color: #606d5d;
   text-decoration: none;
 }
 
 .nav_links li a:hover {
-  color: #0088a9;
+  color: honeydew;
 }
 
 .flex-container {

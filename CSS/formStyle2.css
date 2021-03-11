@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contactForm label {
+  display: block;
+}
+
+.contactForm input {
+  height: 100%;
+  width: 100%;
+  max-width: 233.5px;
+  min-width: 185px;
+  max-height: 80%;
+}
+
+.contact-msg {
+  margin-right: 0;
+}
+
+.contact-msg textarea {
+  height: 100%;
+  width: 100%;
+}
+
+.contactForm > div {
+  width: 100%;
+}
+
+.contact-name {
+  grid-area: name;
+}
+
+.contact-townborn {
+  grid-area: townborn;
+}
+
+.contact-email {
+  grid-area: email;
+}
+
+.contact-msg {
+  grid-area: msg;
+  padding-bottom: 20px;
+}
+
+.contact-form-button {
+  grid-area: button;
+  margin-top: -20px;
+  padding-top: 10px;
+}
+
+.contactForm {
+  background-color: #2196f3;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "name" "townborn" "email" "msg" "button";
+  padding: 20px;
+  max-width: 800px;
+  margin-right: 20px;
+}
+
+@media (min-width: 446px) {
+  .contactForm {
+    grid-template-areas: "name msg" "townborn msg" "email msg" "button msg";
+  }
+  .contact-form-button {
+    margin-top: 0;
+  }
+}

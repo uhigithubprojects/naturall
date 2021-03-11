@@ -21,20 +21,9 @@
 .contact input {
   width: 100%;
 }
-.contact input,
-.submit-button button {
+.contact input {
   padding: 1em;
   margin-bottom: 1em;
-}
-
-.submit-button button {
-  background: grey;
-  color: white;
-  border: 0;
-}
-
-.submit-button {
-  order: 2;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -45,7 +34,7 @@
     margin-right: 2em;
     order: 2;
   }
-  .submit-button {
+  .form-button {
     order: 3;
   }
 }
