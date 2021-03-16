@@ -4,51 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <!-- <link rel="stylesheet" href="formStyle.css" /> -->
-    <link rel="stylesheet" href="./CSS/formStyle2.css" />
+    <link rel="stylesheet" href="./CSS/formStyle.css" />
     <title>Contact Us</title>
   </head>
   <body>
     <header>
-      <img src="Images/logo.png" alt="logo" id="logo" />
-      <!--Logo-->
+      <img src="Images/Logo 70px.png" alt="logo" id="logo" />
       <nav>
         <ul class="nav_links">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./merchandise.html">Merchandise</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contactUs.html">Contact Us</a></li>
+          <li><a href="#" id="Basket">Basket</a></li>
         </ul>
       </nav>
     </header>
-    <h1>CONTACT US</h1>
-    <br /><br />
-    <h4>
-      Have a quick question? Use contact form below and we'll be back to you as
-      soon as possible!
-    </h4>
     <br />
-    <form action="#" class="contactForm">
-      <div class="contact-named">
-        <label for="name">Name</label>
-        <input type="text" id="name" />
+    <div class="container">
+      <h1 class="brand">Contact Us</h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <ul>
+            <li>Street Address</li>
+            <li>555 555 5555</li>
+            <li>myemailblabla</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email us</h3>
+          <form>
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" />
+            </p>
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="text" name="email" />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" />
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea rows="5" name="message"></textarea>
+            </p>
+            <p class="full"><button>Submit</button></p>
+          </form>
+        </div>
       </div>
-      <div class="contact-townborn">
-        <label for="townborn">Town you were born in</label>
-        <input type="text" id="townborn" />
-      </div>
-      <div class="contact-email">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" />
-      </div>
-      <div class="contact-form-button">
-        <button type="submit">Submit</button>
-      </div>
-      <div class="contact-msg">
-        <label for="msg">Message</label>
-        <textarea id="msg"></textarea>
-      </div>
-    </form>
+    </div>
   </body>
 </html>

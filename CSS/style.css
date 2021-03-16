@@ -14,27 +14,27 @@ body {
 
 header {
   display: flex;
-  padding: 10px 5%;
+  padding: 10px 0;
   background-color: #ddf2eb;
   align-items: center;
-  align-self: stretch;
 }
 
 #logo {
-  height: 70px;
-  width: 70px;
   cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 2%;
 }
 
 .nav_links {
   list-style: none;
   margin-left: 10%;
+  max-width: 800px;
   white-space: nowrap;
 }
 
 .nav_links li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 1.5vw;
 }
 
 .nav_links li a {
@@ -44,6 +44,9 @@ header {
   font-size: 15px;
   color: #606d5d;
   text-decoration: none;
+}
+
+#Basket {
 }
 
 .nav_links li a:hover {
