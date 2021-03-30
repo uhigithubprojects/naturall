@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>UHI Tunes</title>
+    <!-- CSS main stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
