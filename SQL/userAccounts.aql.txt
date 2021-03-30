@@ -1,0 +1,11 @@
+CREATE TABLE userAccounts (
+    ID INT(6) PRIMARY KEY AUTO_INCREMENT,	
+    name VARCHAR(40),
+    email VARCHAR(50),
+    address VARCHAR(100),
+    postcode VARCHAR(10)
+);
+
+
+
+
