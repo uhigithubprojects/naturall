@@ -9,7 +9,8 @@
 body {
   background-image: linear-gradient(to top, #ddf2eb, #d3cdd7);
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
 }
 
 header {
