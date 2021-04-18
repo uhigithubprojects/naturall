@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,6 +21,14 @@
 .wrapper > .merchandiseBanner {
   grid-column: 1 / 3;
   padding: 0em;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+}
+
+.merchandiseBanner > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
 }
 
 .bannerBg {
@@ -28,8 +38,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.4;
+  z-index: 1;
 }
 
 .backgroundContent {
+  z-index: 2;
+}
+
+.backgroundContent > h1,
+h3 {
+  font-family: "Montserrat", "sans-serif";
   text-align: center;
+  color: rgb(16, 0, 75);
 }
