@@ -61,3 +61,41 @@ header a:hover {
 .flex-container {
   display: flex;
 }
+
+.dropbtn {
+  display: none;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+@media only screen and (max-width: 578px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .nav_links,
+  #Basket {
+    display: none;
+  }
+
+  .dropdown {
+    margin-right: 2%;
+  }
+
+  .dropbtn {
+    font-size: 2rem;
+    display: inline-block;
+    border: transparent;
+    color: rgb(113, 39, 136);
+    background-color: transparent;
+  }
+
+  .dropbtn:hover {
+    transform: rotate(90deg);
+    color: rgb(240, 204, 252);
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+}
