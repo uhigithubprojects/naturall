@@ -65,7 +65,7 @@
       </div>
       <div>
         <p>
-          <img src="Logo-and-page-design/shirt.png" /><br />
+          <img src="Images\naturall mug (1).png" alt="mug" id="mug" class="mugs" /><br />
           <b>MUG 1</b> <br /><br />
           Make your morning cuppa something special with our
           <!--mug name here -->
