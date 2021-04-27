@@ -17,13 +17,18 @@
     <title>Merchandise</title>
   </head>
   <body>
+    <?php
+    session_start();
+
+
+    ?>
     <header>
       <img src="Images/Logo 70px.png" alt="logo" id="logo" />
       <!--Logo-->
       <nav>
         <ul class="nav_links">
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./merchandise.html">Merchandise</a></li>
+          <li><a href="./merchandise.php">Merchandise</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contactUs.html">Contact Us</a></li>
         </ul>
@@ -36,9 +41,10 @@
     <div class="mobileNav show-links">
         <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./merchandise.html">Merchandise</a></li>
+          <li><a href="./merchandise.php">Merchandise</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contactUs.html">Contact Us</a></li>
+          <li><a href="./basket.php">Basket</a></li>
         </ul>
       </div>
     <br /><br /><br />

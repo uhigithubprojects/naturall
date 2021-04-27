@@ -13,9 +13,8 @@ DEFINE ('DB_USER', 'IN18006234');                           // The username
 DEFINE ('DB_PASSWORD','18006234');                        // The password
 DEFINE ('DB_HOST', 'localhost');                        // The mysql server host address 
 DEFINE ('DB_NAME', 'IN18006234');                           // The database name
-@$DB = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
-if (mysqli_connect_errno())
+if (!$con = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME))
   {
-  echo 'Cannot connect to the database: ' . mysqli_connect_error();
+  die('Failed to connect to database ');
   }
 ?>
