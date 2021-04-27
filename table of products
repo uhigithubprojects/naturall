@@ -1,0 +1,18 @@
+CREATE TABLE NaturallProducts 
+(
+  productID INT(10) NOT NULL PRIMARY KEY,
+  product_name VARCHAR(100) NOT NULL,
+  colour VARCHAR(100) NOT NULL,
+  category VARCHAR(100) NOT NULL,
+  type CHAR(1) NOT NULL,    (meaning male/female: M/F or 0 for mugs)
+  price DECIMAL(6,2)
+  );
+  
+  INSERT INTO Products(productID, product_name, colour, category, price)
+  VALUES ('1', 'Bear Mug', 'Black/White', 'Mugs', '0' '10.99');
+  INSERT INTO Products(productID, product_name, colour, category, price)
+  VALUES ('2', 'Second Mug', 'Unknown', 'Mugs', '0', '11.99');
+  INSERT INTO Products(productID, product_name, colour, category, price)
+  VALUES ('3', 'Naturall Logo T-Shirt Men', 'White', 'T-Shirts', 'M', '21.99');
+  INSERT INTO Products(productID, product_name, colour, category, price)
+  VALUES ('4', 'Naturall Logo T-Shirt Women', 'White', 'T-Shirts', 'F', '21.99');
