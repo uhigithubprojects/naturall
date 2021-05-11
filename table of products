@@ -5,14 +5,15 @@ CREATE TABLE NaturallProducts
   colour VARCHAR(100) NOT NULL,
   category VARCHAR(100) NOT NULL,
   type CHAR(1) NOT NULL,    (meaning male/female: M/F or 0 for mugs)
-  price DECIMAL(6,2)
+  price DECIMAL(6,2);
+  quantity INT(255)
   );
   
   INSERT INTO Products(productID, product_name, colour, category, price)
-  VALUES ('1', 'Bear Mug', 'Black/White', 'Mugs', '0' '10.99');
+  VALUES ('1', 'Bear Mug', 'Black/White', 'Mugs', '0' '10.99', '0');
   INSERT INTO Products(productID, product_name, colour, category, price)
-  VALUES ('2', 'Second Mug', 'Unknown', 'Mugs', '0', '11.99');
+  VALUES ('2', 'Second Mug', 'Unknown', 'Mugs', '0', '11.99', '0');
   INSERT INTO Products(productID, product_name, colour, category, price)
-  VALUES ('3', 'Naturall Logo T-Shirt Men', 'White', 'T-Shirts', 'M', '21.99');
+  VALUES ('3', 'Naturall Logo T-Shirt Men', 'White', 'T-Shirts', 'M', '21.99', '0');
   INSERT INTO Products(productID, product_name, colour, category, price)
-  VALUES ('4', 'Naturall Logo T-Shirt Women', 'White', 'T-Shirts', 'F', '21.99');
+  VALUES ('4', 'Naturall Logo T-Shirt Women', 'White', 'T-Shirts', 'F', '21.99', '0');
