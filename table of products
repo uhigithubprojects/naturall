@@ -9,7 +9,7 @@ CREATE TABLE NaturallProducts
   quantity INT(255)
   );
   
-  INSERT INTO Products(productID, product_name, colour, category, price)
+  INSERT INTO Products(productID, product_name, colour, category, price, quantity)
   VALUES ('1', 'Bear Mug', 'Black/White', 'Mugs', '0' '10.99', '0');
   INSERT INTO Products(productID, product_name, colour, category, price)
   VALUES ('2', 'Second Mug', 'Unknown', 'Mugs', '0', '11.99', '0');
